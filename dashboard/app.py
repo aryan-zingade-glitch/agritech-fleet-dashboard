@@ -46,8 +46,7 @@ max_date = trend_df["date"].max().date()
 date_range = st.sidebar.date_input("Date Range", [min_date, max_date], min_value=min_date, max_value=max_date)
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("**John Deere Technology Center**")
-st.sidebar.markdown("Magarpatta City, Pune")
+
 
 # ── Filter data ──────────────────────────────────────────────────────────────
 if selected_location != "All":
@@ -195,3 +194,4 @@ st.plotly_chart(fig_scatter, use_container_width=True)
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("---")
 st.markdown("Built with Python · Streamlit · Plotly · SQLite | John Deere Fleet Analytics Demo")
+
